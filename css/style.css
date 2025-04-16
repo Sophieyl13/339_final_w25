@@ -1,0 +1,190 @@
+/* FONT */
+.pompiere-regular {
+  font-family: "Pompiere", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* GRID LAYOUT */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 30px;
+  width: 100%;
+  font-family: "Italiana", sans-serif;
+}
+/* BODY */
+body{
+    background-color: #eee8e0;
+  }
+
+/* navigation */
+nav{
+    background-color: #675f55;
+    padding: 25px 0; 
+    text-align: center;
+  }
+nav li{
+    display:inline;
+    padding:20px;
+  }
+nav a{
+    color: #eee8e0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+nav a:hover, nav a:focus{
+    text-decoration-line: underline;
+}
+
+/* CONTENT */
+.map.heading{
+  max-height: 400px;
+  width: auto;
+  display: grid;
+  grid-column: 1/-1;
+  width: 80%;
+  grid-row: 4;
+  border: solid 3px #675f55;
+  padding-bottom: 35px;
+  overflow: auto;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+#map img{
+  max-height: 400px;
+  width: auto;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 4;
+  padding-top: 5px;
+}
+.Title{
+  font-size: xx-large;
+  grid-column: 1/-1;
+}
+h1{
+  font-size: x-large;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: #675f55;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+h2{
+  font-size: x-large;
+  color: #675f55;
+  padding-bottom: 3px;
+  border-bottom: solid #675f55 1px;
+}
+h3{
+  font-size: x-large;
+  color: #675f55;
+  padding-bottom: 3px;
+  margin-top: 2%;
+}
+
+div.overview{
+  /* background-color: yellow; */
+  border: solid 3px #675f55;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.overview p, .overview ol{
+  padding-top: 3px;
+}
+
+
+.page.overview{
+  grid-row: 2/3;
+  text-align: center;
+}
+.rankings.overview{
+  grid-row: 3/4;
+}
+.map.heading{
+  grid-row: 4/5;
+}
+/* DORSAY */
+#cover img {
+  max-height: 400px;
+  width: auto;
+  /* display: block; */
+  display: grid;
+  grid-column: 1/2;
+}
+.museum.overview{
+  grid-row: 2/3;
+  text-align: center;
+  max-height: 400px;
+  overflow: auto;
+  min-width: 200px;
+}
+#coverright img {
+  max-height: 400px;
+  width: auto;
+  /* display: block; */
+  display: grid;
+  grid-column: 3/4;
+  justify-self: end;
+}
+.intro{
+  grid-column: 1/-1;
+  border: solid 3px #675f55;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.intro p{
+  text-align: center;
+}
+.faves img{
+  max-height: 400px;
+}
+.faves{
+  grid-column: 1/-1;
+  /* border: solid 3px #675f55; */
+  /* border-bottom: solid 3px #675f55; */
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+#first{
+  grid-row: 4/5;
+}
+#second{
+  grid-row: 5/6;
+}
+
+/* FOOTER */
+footer{
+    background-color: #675f55;
+    color: #eee8e0;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 2%;
+  }
