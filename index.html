@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>My Visits to Art Museums in Paris</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pompiere&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="dorsay.html">Musee d'Orsay</a></li>
+                <li><a href="louvre.html">Louvre</a></li>
+                <li><a href="orangerie.html">Musee l'orangerie</a></li>
+                <li><a href="petit.html">Petit Palais</a></li>
+                <li><a href="pompidou.html">Centre Pompidou</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container" id="main">
+        <div class = "Title">
+            <h1>ART MUSEUMS: PARIS</h1>
+        </div>
+
+        <div class = "page overview">
+            <h2>My Visits to Art Museums in Paris</h2>
+            <p>I love visiting art museums! During my trip to Paris over winter break, I visited five different art museums (listed below). On this site, you can view some photos I took, as well as my thoughts on each museum.</p>
+        </div>
+
+        <div class = "rankings overview">
+            <h2>My Ranking of the five museums</h2>
+            <ol>
+                <li>Musee d'Orsay</li>
+                <li>Louvre</li>
+                <li>Musee l'orangerie</li>
+                <li>Petit Palais</li>
+                <li>Musee Pompidou</li>
+            </ol>
+        </div>
+
+        <div class = "map heading">
+            <p>Click on the corresponding numbers on this map to view more about my experience!</p>
+            <div class = "map-image" id = map>
+            <img src="images/map.jpg" alt="map of paris">
+            <map name="workmap">
+                <area shape="circle" coords="22,22,200" alt="Cup of coffee" href="dorsay.html">
+              </map>
+        </div>
+        </div>
+
+    </main>
+    <!-- Javascript: Year -->
+        <footer>
+            <p> Sophie Liu <span id="year"></span> | SI 339 Final Project </a></p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+</body>
+</html>
