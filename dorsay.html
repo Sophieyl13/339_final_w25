@@ -3,19 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Musee d'Orsay My Visits to Art Museums in Paris</title>
+    <title>Musée d'Orsay My Visits to Art Museums in Paris</title>
 </head>
 <body>
     <header>
+        <a href="#main" class="skip">Skip to main content</a>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home Page</a></li>
-                <li><a href="dorsay.html">Musee d'Orsay</a></li>
+                <li><a href="dorsay.html">Musée d'Orsay</a></li>
                 <li><a href="louvre.html">Louvre</a></li>
-                <li><a href="orangerie.html">Musee l'orangerie</a></li>
+                <li><a href="orangerie.html">Musée l'Orangerie</a></li>
                 <li><a href="petit.html">Petit Palais</a></li>
                 <li><a href="pompidou.html">Centre Pompidou</a></li>
             </ul>
@@ -23,26 +25,26 @@
     </header>
     <main class="container" id="main">
         <div class = "Title">
-            <h1>Musee d'Orsay</h1>
+            <h1>Musée d'Orsay</h1>
         </div>
 
         <div class = "dorsay-image" id = cover>
-            <img src="images/dorsay_cover.JPG" alt="Image of the interior of Musee d'Orsay with sculptures">
+            <img src="images/dorsay_cover.JPG" alt="Image of the interior of Musée d'Orsay with sculptures">
         </div>
         <div class = "museum overview">
             <!-- https://en.wikipedia.org/wiki/Mus%C3%A9e_d'Orsay -->
-            <p>The Musee d'Orsay, established in 1986, is located on the left bank of the Seine. It holds the largest Impressionist and post-Impressionist collection.</p>
+            <p>The Musée d'Orsay, established in 1986, is located on the left bank of the Seine. It holds the largest Impressionist and post-Impressionist collection.</p>
             <!-- https://www.w3schools.com/tags/tag_hr.asp -->
             <hr style="height:2px;width:100px;border-width:0;color:#675f55;background-color:#675f55">
-            <p>Musee d'Orsay was my favorite museum! Part of the reason is because I like Impressionist paintings. I learned about some of the paintings in one of my Art History classes, and was able to draw connections and understand the context of more paintings. </p>
+            <p>Musée d'Orsay was my favorite museum! Part of the reason is because I like Impressionist paintings. I learned about some of the paintings in one of my Art History classes, and was able to draw connections and understand the context of more paintings. </p>
         </div>
         <div class = "dorsay-image" id = coverright>
-            <img src="images/dorsay_cover2.JPG" alt="Image of the interior of the front of Musee d'Orsay with the giant clock">
+            <img src="images/dorsay_cover2.JPG" alt="Image of the interior of the front of Musée d'Orsay with the giant clock">
         </div>
 
         <div class = "favorites intro">
             <h2>My Favorites</h2>
-            <p>Unfortunately, I did not have enough time to see all the pieces (and missed some good ones). Here are my favorites from what I was able to see at the Musee d'Orsay!</p>
+            <p>Unfortunately, I did not have enough time to see all the pieces (and missed some good ones). Here are my favorites from what I was able to see at the Musée d'Orsay!</p>
         <!-- </div> -->
 
         <div class = "faves" id = "first">
@@ -89,6 +91,9 @@
     <!-- Javascript: Year -->
         <footer>
             <p> Sophie Liu <span id="year"></span> | SI 339 Final Project </a></p>
+            <p>-</p>
+            <p>Information on the museum retrieved from https://en.wikipedia.org/wiki/Mus%C3%A9e_d'Orsay</p>
+            
         </footer>
         <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();
