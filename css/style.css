@@ -46,7 +46,7 @@ html{
 }
 .container {
   margin: 0;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   /* overflow: scroll; */
 }
 @media screen and (prefers-reduced-motion: reduce){
@@ -105,34 +105,46 @@ nav ul{
 
 /* CONTENT */
 .map.heading{
-  max-height: 400px;
+  /* max-height: 400px; */
+  height: 100%;
   width: auto;
   display: grid;
   grid-column: 1/-1;
   width: 80%;
   grid-row: 4;
-  border: solid 3px #675f55;
+  /* border: solid 3px #675f55; */
   padding-bottom: 35px;
   overflow: auto;
   justify-items: center;
   align-items: center;
   margin: auto;
 }
-#map img{
-  max-height: 400px;
+/* #map img{
+  max-height: 600px; 
   width: auto;
   display: grid;
   grid-column: 2/3;
   grid-row: 4;
   padding-top: 5px;
+  object-fit: cover;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+} */
+#map img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
+
 .Title{
   font-size: xx-large;
   grid-column: 1/-1;
 }
 h1{
-  /* font-size: x-large; */
-  font-size: 3vw;
+  font-size: x-large;
+  /* font-size: 3vw; */
   text-align: center;
   padding-top: 25px;
   padding-bottom: 5px;
@@ -141,17 +153,21 @@ h1{
   grid-row: 1/2;
 }
 h2{
-  font-size: x-large;
+  /* font-size: x-large; */
   color: #675f55;
   padding-bottom: 3px;
   border-bottom: solid #675f55 1px;
 }
 h3{
-  font-size: x-large;
+  /* font-size: x-large; */
   color: #675f55;
   padding-bottom: 3px;
   margin-top: 2%;
   text-align: center;
+}
+
+h2, h3{
+  font-size: 2vw;
 }
 
 div.overview{
@@ -220,7 +236,7 @@ div.overview{
   grid-column: 1/-1;
   border: solid 3px #675f55;
   /* width: 85%; */
-  width: 55%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,13 +310,17 @@ footer{
     margin-top: 2%;
   }
 footer p{
-  font-size: 1vw;
+  font-size: small;
 }
 
 
 @media only screen and (min-width: 1000px){
-  nav li{
+  nav li, footer p{
     font-size: large;
+  }
+
+  h1{
+    font-size: 3vw;
   }
 
   #coverright img {
@@ -325,18 +345,25 @@ footer p{
 
   .intro{
     /* border: none; */
-    width: 75%;
+    width: 70%;
   }
-  .intro p{
+  .intro p, .overview p{
     font-size: 1.5vw;
   }
-  h2, h3{
+ ol li{
+    font-size: 1.5vw;
+  }
+  /* h2, h3{
     font-size: 2vw;
+  } */
+
+  .map.heading{
+    width: 60%;
   }
 }
 
 @media only screen and (min-width: 2000px){
-  nav li{
+  nav li, footer p{
     font-size: xx-large;
   }
   .museum.overview{
